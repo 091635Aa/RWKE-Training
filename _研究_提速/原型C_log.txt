@@ -1,0 +1,18 @@
+﻿
+### RWKV-7 "Goose" enabled ###
+
+===== P1 惩罚应用 A/B（n=400）=====
+旧 Python 循环 n=400:     9.03 ms/步
+新 GPU 向量化   n=400:     0.06 ms/步   (157x)
+
+===== P2 原型C：CUDA Graph =====
+[加载] RWKV7-G1-1.5B …
+Loading <workspace>/RWKE\models\rwkv7-g1j-1.5b-20260831-ctx16384 (cuda fp16)
+
+[捕获] CUDA Graph 捕获成功
+(a) TS 步进（无图）        :    28.76 ms/步 → 34.8 tok/s
+(b) CUDA Graph replay     :     9.18 ms/步 → 108.9 tok/s  (3.13x)
+30步 logits 最大差 图vs引擎fast（重绑修正后）: 0.000e+00（应为 0）
+[注] 图内状态自续：replay 前无需逐帧拷贝，轮首一次 copy-in 即可
+
+结果: {'设备': 'NVIDIA GeForce RTX 3080 Laptop GPU', 'P1_惩罚旧_ms': 9.03, 'P1_惩罚新_ms': 0.06, 'P2_ts步进_ms': 28.76, 'P2_graph_ms': 9.18, 'P2_图等价差_引擎': 0.0}

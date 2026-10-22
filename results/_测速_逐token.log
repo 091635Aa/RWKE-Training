@@ -1,0 +1,14 @@
+Failed to build cuBLAS matmul, falling back to torch.matmul. Small model with fp16 will overflow.
+
+### RWKV-7 "Goose" enabled ###
+
+Loading <workspace>/02_新一代架构_RWKV7\RWKE\models\rwkv7-g1j-1.5b-20260831-ctx16384 (cuda fp16)
+
+训练器就绪：基座=RWKV7-G1-1.5B（cuda fp16, 预算 14GB） n_layer=24 n_embd=2048 | rank=16 alpha=32 适配器参数量=14,155,776（基座全部冻结）
+数据加载：1211 条可用样本（截断/空目标跳过 0 条），来源 训练数据\微调数据_train.jsonl
+开始训练：epochs=1 上限步=12 累积=4 序列长度=256 lr=0.0001 样本=1211 前向=逐token 存点间隔=50
+  checkpoint 已保存（step1 最优）：适配器\_测速_逐token\RWKV7-G1-1.5B_lora_best.pt
+[step 1] loss=2.8258 lr=1.000e-04 显存峰值=15.65GB
+[step 2] loss=3.0986 lr=1.000e-04 显存峰值=15.65GB
+  checkpoint 已保存（step3 最优）：适配器\_测速_逐token\RWKV7-G1-1.5B_lora_best.pt
+[step 3] loss=2.6117 lr=1.000e-04 显存峰值=15.65GB

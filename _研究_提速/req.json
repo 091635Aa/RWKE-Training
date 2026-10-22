@@ -1,0 +1,11 @@
+﻿{
+    "stream":  true,
+    "messages":  [
+                     {
+                         "content":  "RoleB你好，今天过得怎么样？",
+                         "role":  "user"
+                     }
+                 ],
+    "model":  "rwkv7-g1-1.5b",
+    "max_tokens":  128
+}

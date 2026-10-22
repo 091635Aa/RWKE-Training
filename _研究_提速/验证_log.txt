@@ -1,0 +1,13 @@
+﻿
+### RWKV-7 "Goose" enabled ###
+
+[加载] RWKV7-G1-1.5B …
+Loading <workspace>/RWKE\models\rwkv7-g1j-1.5b-20260831-ctx16384 (cuda fp16)
+
+[场景1 裸基座] 30步 logits最大差=1.875e-01  hidden最大差=2.344e-02  kv最大差=1.730e-01
+[挂载适配器] EmoCompanion LoRA …
+[场景2 挂LoRA] 30步 logits最大差=1.562e-01  hidden最大差=2.344e-02  kv最大差=8.943e-02
+[生成-fast] 2.19s（64 token 上限）→ 嗨！当然没问题，我会跟你分享我自己的。哦对了我没这个意识知道啊。谢谢你呀。
+[生成-legacy] 2.92s（64 token 上限）→ 嗨！当然没问题，我会跟你分享我自己的。哦对了我没这个意识知道啊。谢谢你呀。
+
+结论：裸基座差=1.875e-01，挂LoRA差=1.562e-01（fp16 跨核噪声 <3 合格）

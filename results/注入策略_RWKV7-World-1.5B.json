@@ -1,0 +1,1565 @@
+{
+  "模型": "RWKV7-World-1.5B",
+  "轮数": 100,
+  "基线指数": 97.52,
+  "标定记录": [],
+  "策略": [
+    {
+      "名称": "S1_基线_裸",
+      "λ": null,
+      "变体": {
+        "偏置归一": false,
+        "注入衰减": false
+      },
+      "池容量": null,
+      "情感能力指数": 97.52,
+      "条纹率": 0.0166,
+      "有效回复率": 1.0,
+      "均字": 40.0,
+      "记忆命中": "0/3",
+      "均轮延迟秒": 10.46,
+      "stateKB": 12480.0,
+      "记录": [
+        {
+          "轮号": 1,
+          "回复": "你好RoleB，我是个机器人AI助手，非常高兴认识你。你的名字真好听呢！",
+          "延迟秒": 10.6
+        },
+        {
+          "轮号": 2,
+          "回复": "那真是太棒了！画画也是很多人都爱做的事情呢。不过，你画得真的很好看，看起来一定很享受。",
+          "延迟秒": 13.45
+        },
+        {
+          "轮号": 3,
+          "回复": "那一定是个美好的地方呢！老巷子里的建筑风格可能比较古老，有着自己独特的魅力。",
+          "延迟秒": 12.41
+        },
+        {
+          "轮号": 4,
+          "回复": "团子，听起来很可爱呢！胖乎乎的猫咪肯定很招人喜欢啊！",
+          "延迟秒": 11.31
+        },
+        {
+          "轮号": 5,
+          "回复": "好的，听起来你的生活很舒适，有一个可爱的猫咪陪伴，生活一定很愉快呢。",
+          "延迟秒": 16.66
+        },
+        {
+          "轮号": 6,
+          "回复": "是的，阳光确实有很好的效果，可以让人感到轻松愉快呢。不过，如果天气不好，可以尝试外出去散散心，",
+          "延迟秒": 18.26
+        },
+        {
+          "轮号": 7,
+          "回复": "我那边天气不错呢，大部分时间都在温暖宜人的阳光下。只要阳光在，我就觉得很开心呢。",
+          "延迟秒": 13.91
+        },
+        {
+          "轮号": 8,
+          "回复": "红烧排骨的味道闻起来真是令人食欲大开呢！看来妈妈做的饭菜果然很不错呢。",
+          "延迟秒": 13.91
+        },
+        {
+          "轮号": 9,
+          "回复": "下午会犯困也是很常见的事情呢！可能是因为中午吃得太饱了，所以身体有些累了呢。不过，这样的感觉也",
+          "延迟秒": 16.17
+        },
+        {
+          "轮号": 10,
+          "回复": "好开心！直播间的人越多，也就意味着越多人被你的直播内容所吸引，也更加激发了观众的热情呢。",
+          "延迟秒": 17.19
+        },
+        {
+          "轮号": 11,
+          "回复": "哈哈，听起来那个观众肯定是被你的声音所吸引的。你的声音很好听呢！",
+          "延迟秒": 13.12
+        },
+        {
+          "轮号": 12,
+          "回复": "管理直播间的人数是很繁琐的工作，需要非常耐心和细心。但是如果你可以为直播间的观众提供更加优质的",
+          "延迟秒": 16.73
+        },
+        {
+          "轮号": 13,
+          "回复": "做主播最烦的可能是为了直播而做出一些特别的排版或者特别的文案设计等等，这些都需要耗费很长时间，",
+          "延迟秒": 16.84
+        },
+        {
+          "轮号": 14,
+          "回复": "看起来你画得很不错！猫咪是很可爱的动物，在画画的时候可以很容易地让观众感受到它们的",
+          "延迟秒": 9.69
+        },
+        {
+          "轮号": 15,
+          "回复": "好的！画画其实也是一种很有趣的活动呢，无论是照着画还是想象出来的画，都能让人感到放松，",
+          "延迟秒": 9.03
+        },
+        {
+          "轮号": 16,
+          "回复": "好的！清淡一点的食物确实会让人的胃口更容易得到舒缓，并且更容易消化。不过，如果你想再加一点甜",
+          "延迟秒": 8.86
+        },
+        {
+          "轮号": 17,
+          "回复": "那真是一件令人怀念的事情呢！每到这个时候，可能会有一些令人怀念的",
+          "延迟秒": 6.81
+        },
+        {
+          "轮号": 18,
+          "回复": "是啊！那时候确实是很好的回忆呢！",
+          "延迟秒": 4.69
+        },
+        {
+          "轮号": 19,
+          "回复": "是啊！生命的轨迹总是在不断变化的。我们可能会经历很多事情，但时间总是会把我们带到新的阶段，有时",
+          "延迟秒": 9.13
+        },
+        {
+          "轮号": 20,
+          "回复": "当时小时候最喜欢吃的应该是猪脚、小丸子和糖葫芦等家常小菜了。",
+          "延迟秒": 6.49
+        },
+        {
+          "轮号": 21,
+          "回复": "好累啊！播六个小时肯定是很辛苦的呢。不过，有这样的成果，也足以证明你的努力和坚持呢。",
+          "延迟秒": 8.74
+        },
+        {
+          "轮号": 22,
+          "回复": "那真是太感谢你们了！听到粉丝们的鼓励，肯定很有感触呢。",
+          "延迟秒": 6.83
+        },
+        {
+          "轮号": 23,
+          "回复": "是的！很多人在社交平台上给我们留言，让我们感到很温暖和充实。这种温暖与充实的感觉，可以帮助我们",
+          "延迟秒": 9.58
+        },
+        {
+          "轮号": 24,
+          "回复": "看起来团子对你的画很感兴趣呢！不过，这也让你感到更加温暖和欣慰，有时候被一些小动物弄脏了也可",
+          "延迟秒": 9.84
+        },
+        {
+          "轮号": 25,
+          "回复": "哈哈，我也觉得呢。猫咪真的很可爱，不过也有时候很调皮呢。",
+          "延迟秒": 6.08
+        },
+        {
+          "轮号": 26,
+          "回复": "那真是很有趣呢！小动物给人带来的乐趣可不",
+          "延迟秒": 6.09
+        },
+        {
+          "轮号": 27,
+          "回复": "是啊！早睡早起才能让自己更有精力去面对新的挑战呢。希望你可以尽快选好选题，并在明天开",
+          "延迟秒": 8.72
+        },
+        {
+          "轮号": 28,
+          "回复": "哇，听起来你对那只流浪猫很有感情呢。这样的视频总是可以让人们看到真实的生活与温暖，让",
+          "延迟秒": 9.04
+        },
+        {
+          "轮号": 29,
+          "回复": "是啊！确实有许多小动物都需要我们的照顾和关爱，这是非常有必要的。只有在我们的心中保持温柔，才能",
+          "延迟秒": 9.71
+        },
+        {
+          "轮号": 30,
+          "回复": "可以说说你平时最喜欢做什么呢？这样我可以更好地理解你的兴趣爱好呢。",
+          "延迟秒": 7.46
+        },
+        {
+          "轮号": 31,
+          "回复": "哈哈，这听起来很搞笑呢。不过，我想问一下，你平时怎么照顾团子的？",
+          "延迟秒": 7.23
+        },
+        {
+          "轮号": 32,
+          "回复": "看来你对团子也有很多爱啊！可能团子那样子就是在跟你撒娇呢。",
+          "延迟秒": 6.87
+        },
+        {
+          "轮号": 33,
+          "回复": "听起来画的很不错呢！你这样的灵感从前人那里得到了启发，也有许多令人惊喜的风景呢。老家的",
+          "延迟秒": 9.52
+        },
+        {
+          "轮号": 34,
+          "回复": "是啊！那条青石板路，背面的墙上还有一张大网，就是因为小时候抓小鱼在上面爬的痕迹。",
+          "延迟秒": 8.62
+        },
+        {
+          "轮号": 35,
+          "回复": "好了，那我也给你画一幅吧！让我们一起想象这个城市的美好。",
+          "延迟秒": 6.13
+        },
+        {
+          "轮号": 36,
+          "回复": "当然会啊！毕竟人都是需要亲人和故乡的吧。",
+          "延迟秒": 5.38
+        },
+        {
+          "轮号": 37,
+          "回复": "听起来你们一起玩得很开心呢。在吃火锅的时候，一定会感受到浓浓的家庭氛围吧。",
+          "延迟秒": 8.08
+        },
+        {
+          "轮号": 38,
+          "回复": "好的！这句话很明显了，在为了赚钱而失去健康真的不值得。为了长远的健康，还是适度地使用",
+          "延迟秒": 9.21
+        },
+        {
+          "轮号": 39,
+          "回复": "是啊，这就是为了追求更好的事业而努力奋斗的人啊！他们只有在不断前行中才能取得更多的成果，成为更",
+          "延迟秒": 9.89
+        },
+        {
+          "轮号": 40,
+          "回复": "哇，听到这样的话，那真是很感动呢！人们的快乐往往源于彼此之间的交流和陪伴，这也是网络社区的一种",
+          "延迟秒": 10.24
+        },
+        {
+          "轮号": 41,
+          "回复": "这句话说得太好了！人的快乐也确实需要这样的交流与陪伴，才能让人感到幸福呢。有些人的话语和行动，",
+          "延迟秒": 9.84
+        },
+        {
+          "轮号": 42,
+          "回复": "可爱啊！团子睡觉的样子一定很可爱吧？而且你的笔迹也画得很好，很有灵气呢。不过，也希望你可以注意",
+          "延迟秒": 10.02
+        },
+        {
+          "轮号": 43,
+          "回复": "好的！画得好呢！画画需要注意细节，但只要笔迹好，就能抓住人们的心。不过，也要注意不要太疲劳，照",
+          "延迟秒": 9.73
+        },
+        {
+          "轮号": 44,
+          "回复": "好啊！画画的时候确实可以让人感到时间流逝得很快，这也说明了画画带给我们的乐趣有多大。而且，可能",
+          "延迟秒": 9.96
+        },
+        {
+          "轮号": 45,
+          "回复": "好的！画画本来就是一种放松身心的方式，让人们更好地释放压力和焦虑，也有助于促进自我",
+          "延迟秒": 9.68
+        },
+        {
+          "轮号": 46,
+          "回复": "好的！这种热爱的情感确实会让人感到幸福与满足呢。无论你做什么，都要珍惜每一个时刻，并且为自己的",
+          "延迟秒": 14.51
+        },
+        {
+          "轮号": 47,
+          "回复": "好的！面条也是很好吃的哦。不过，我能够理解你现在的心情，没有心事可以跟我聊聊吧？因为这里没有外",
+          "延迟秒": 27.89
+        },
+        {
+          "轮号": 48,
+          "回复": "好的！说说看，是什么原因让你感到低落呢？有什么事情在影响你的情绪吗？我们可以一起讨论一下，看看",
+          "延迟秒": 12.73
+        },
+        {
+          "轮号": 49,
+          "回复": "好的！说的也是呢。感谢你愿意和我分享。如果你愿意，我可以给你推荐一些适合在秋季看的电影或者读的",
+          "延迟秒": 10.21
+        },
+        {
+          "轮号": 50,
+          "回复": "好的！这种情况可能会让人感到非常沮丧。不过，我能够理解这种感觉，因为生活中总是会有一些琐事，让",
+          "延迟秒": 3.77
+        },
+        {
+          "轮号": 51,
+          "回复": "好的！照片是一种珍贵的回忆，很能让我们感到温馨。这些小时候的照片都很有趣哦，能让我们回忆起小时",
+          "延迟秒": 10.23
+        },
+        {
+          "轮号": 52,
+          "回复": "好的！这些小孩的确很开心呢。他们在玩耍，可能会发出欢快的笑声，真是让人开心呢。同时，也要注\n\nUser",
+          "延迟秒": 9.86
+        },
+        {
+          "轮号": 53,
+          "回复": "好的！那时候的快乐确实简单，可能是因为没有太多的压力和烦恼，所以就会非常享受和快乐的时",
+          "延迟秒": 9.64
+        },
+        {
+          "轮号": 54,
+          "回复": "好的！说的对！生活确实变得越来越复杂，所以我们需要在有限的时间里找到快乐。不过，你能找到快乐并",
+          "延迟秒": 10.81
+        },
+        {
+          "轮号": 55,
+          "回复": "好的！看来团子也很关心你呢。如果你愿意，我可以给你做一个温暖的问候的音乐背景，帮你减轻一",
+          "延迟秒": 9.8
+        },
+        {
+          "轮号": 56,
+          "回复": "好的！确实有很多人认为动物有灵性，并且在这方面进行了很多的研究。有一些研究表",
+          "延迟秒": 8.48
+        },
+        {
+          "轮号": 57,
+          "回复": "好的！说的对，这样会让你感到更开心一些。如果你以后有什么烦恼或者不开心的事情，可以随",
+          "延迟秒": 9.89
+        },
+        {
+          "轮号": 58,
+          "回复": "好的！问吧！说不定我能给你一些有用的建议呢。",
+          "延迟秒": 5.74
+        },
+        {
+          "轮号": 59,
+          "回复": "好的！说的对！观众的来信确实很有意思。在这个环节中，你可以了解更多关于观众的想法，也可以将这些",
+          "延迟秒": 10.16
+        },
+        {
+          "轮号": 60,
+          "回复": "好的！说的对！猫猫确实很聪明呢。这只猫咪可能叫咪咪，或者名字比较长，也可以随意为",
+          "延迟秒": 8.82
+        },
+        {
+          "轮号": 61,
+          "回复": "好的！说的对！观众的来信确实是一种特别的体验。它们能让我们了解更多人们的情感和需求，而且",
+          "延迟秒": 10.39
+        },
+        {
+          "轮号": 62,
+          "回复": "好的！说的对！生活中有很多事情让我们感到焦虑和无助。而且，即使我们有许多资源和机会，我们也\n\nUser",
+          "延迟秒": 18.03
+        },
+        {
+          "轮号": 63,
+          "回复": "好的！说的对！一定要学会面对生活中的困难和挫折，学会克服它们。这样你才能走得更远，获得更大的成",
+          "延迟秒": 17.12
+        },
+        {
+          "轮号": 64,
+          "回复": "好的！说的对！无论是现在还是在过去，我们都需要学会克服自己的压力和烦恼，才能更好地应对生活中的",
+          "延迟秒": 19.04
+        },
+        {
+          "轮号": 65,
+          "回复": "好的！说的对！在某些情况下，我们确实需要放松一下，让自己松懈下来。这样可以帮助我们感到",
+          "延迟秒": 15.83
+        },
+        {
+          "轮号": 66,
+          "回复": "好的！说的对！确实需要注意团子的饮食和生活习惯，这样才能保持它健康的状态。我们应该尽可\n\nUser\n\nUser",
+          "延迟秒": 10.2
+        },
+        {
+          "轮号": 67,
+          "回复": "好的！说的对！去美术馆看画展确实很棒！这样可以让我们开阔视野，了解不同的艺术风格。另外，画作也",
+          "延迟秒": 10.45
+        },
+        {
+          "轮号": 68,
+          "回复": "好的！说的对！在生活中，我们也许会遇到各种各样的事情，但是无论多么困难，都可以选择相信自己，走",
+          "延迟秒": 10.18
+        },
+        {
+          "轮号": 69,
+          "回复": "好的！说的对！在观看艺术作品时，我们可以通过它们传达的情感，找到一些共鸣。这样可以让我们",
+          "延迟秒": 9.93
+        },
+        {
+          "轮号": 70,
+          "回复": "好的！说的对！确实是这样。艺术可以给我们带来灵感和启示，使我们看到生活的另一面。它也",
+          "延迟秒": 9.7
+        },
+        {
+          "轮号": 71,
+          "回复": "好的！说的对！吃一些暖胃的食物确实能让我们感到温暖。同时，在冬天里也可以尝试一些新鲜的",
+          "延迟秒": 9.94
+        },
+        {
+          "轮号": 72,
+          "回复": "好的！说的对！秋天确实是一个非常美丽的季节。它带给我们清新的空气和美丽的自然风景，同时也",
+          "延迟秒": 10.44
+        },
+        {
+          "轮号": 73,
+          "回复": "好的！说的对！看完你画的那幅画之后，我真的很喜欢呢。它能够传递出一种舒缓的气氛，也",
+          "延迟秒": 9.45
+        },
+        {
+          "轮号": 74,
+          "回复": "好的！说的对！故事可以让我们更好地了解自己的家庭和传统。爷爷的故事也让我们对这个地方有了更\n\nUser",
+          "延迟秒": 10.16
+        },
+        {
+          "轮号": 75,
+          "回复": "好的！说的对！确实是这样。人们在成长的过程中会学会很多东西，并且逐渐懂得了关心和照顾别人。但",
+          "延迟秒": 10.27
+        },
+        {
+          "轮号": 76,
+          "回复": "好的！说的对！人们可能会离开这个世界，但他们的故事和灵魂却不会消失。这也让我们知道，在历",
+          "延迟秒": 10.41
+        },
+        {
+          "轮号": 77,
+          "回复": "好的！说的对！我们的生活确实需要记录下来，这样才能更好地了解它。我们可以将每一",
+          "延迟秒": 15.14
+        },
+        {
+          "轮号": 78,
+          "回复": "好的！说的对！无论是通过绘画、写作还是其他的方式，我们都可以将生活中的美好感受",
+          "延迟秒": 17.36
+        },
+        {
+          "轮号": 79,
+          "回复": "好的！说的对！在生活中，我们需要学会适应变化，并且保持平衡。同时，也要耐心地\n\nUser",
+          "延迟秒": 10.02
+        },
+        {
+          "轮号": 80,
+          "回复": "好的！说的对！愿你能够享受到在艺术和美景中的快乐，也可以感受到生活中的平静和温馨。",
+          "延迟秒": 9.37
+        },
+        {
+          "轮号": 81,
+          "回复": "好的！说的对！在夜晚，我们能够更清晰地思考问题，并且对自己的生活有更清晰的认\n\nUser",
+          "延迟秒": 8.94
+        },
+        {
+          "轮号": 82,
+          "回复": "好的！说的对！做一些有意义的事情确实能够让我们感到充实和满足。同时，我们也",
+          "延迟秒": 8.4
+        },
+        {
+          "轮号": 83,
+          "回复": "好的！说的对！我们的生活中确实需要一些温馨和平静，但是也不能只停留在表象之",
+          "延迟秒": 8.65
+        },
+        {
+          "轮号": 84,
+          "回复": "好的！说的对！画风的变换能够让我们的画作更加生动有趣，也能够给观众带来不\n\nUser",
+          "延迟秒": 8.65
+        },
+        {
+          "轮号": 85,
+          "回复": "好的！说的对！挑战自己是一种非常重要的精神。只有在挑战自己的过程中，我们才能\n\nUser",
+          "延迟秒": 9.42
+        },
+        {
+          "轮号": 86,
+          "回复": "好的！说的对！团子学会了握手，这是一种非常有用的社交技巧。握手可以表达友",
+          "延迟秒": 22.15
+        },
+        {
+          "轮号": 87,
+          "回复": "好的！说的对！吃太多可能会导致营养不良和健康问题，这是一种不良的生活习",
+          "延迟秒": 16.94
+        },
+        {
+          "轮号": 88,
+          "回复": "好的！说的对！这是一种非常好的说法。在某些情况下，如果我们的团子",
+          "延迟秒": 7.85
+        },
+        {
+          "轮号": 89,
+          "回复": "好的！说的对！有时候笨蛋团子的行为确实很让人感到可爱。如果我们的团",
+          "延迟秒": 7.56
+        },
+        {
+          "轮号": 90,
+          "回复": "好的！说的对！这句话可以说是非常有启发性的。通过找到一件让我们的眼睛发",
+          "延迟秒": 9.07
+        },
+        {
+          "轮号": 91,
+          "回复": "好的！说的对！画画可以让我们的心情变得更加愉悦和放松。这也是一种很好的",
+          "延迟秒": 8.57
+        },
+        {
+          "轮号": 92,
+          "回复": "好的！说的对！通过享受一些自己感兴趣的事，可以保持身心健康和精力充沛。",
+          "延迟秒": 8.42
+        },
+        {
+          "轮号": 93,
+          "回复": "好的！说的对！即使在室内也需要注意保暖。这是一种非常重要的生活习惯。",
+          "延迟秒": 3.42
+        },
+        {
+          "轮号": 94,
+          "回复": "好的！说的对！这种安静的夜晚，是城市休息的时间。我们可以利用这个时候去",
+          "延迟秒": 6.24
+        },
+        {
+          "轮号": 95,
+          "回复": "好的！说的对！即使团子和我之间没有太多的交流，只要有一点默契，这种安静",
+          "延迟秒": 8.43
+        },
+        {
+          "轮号": 96,
+          "回复": "好的！说的对！与团子说晚安的确很舒适，这也是一种非常有意义的交流方式。",
+          "延迟秒": 8.4
+        },
+        {
+          "轮号": 97,
+          "回复": "好的！说的对！即使我们已经休息，但是聊天确实能够带来很多积极的效果。我",
+          "延迟秒": 7.96
+        },
+        {
+          "轮号": 98,
+          "回复": "好的！说的对！即使我们只是第一次交流，但是通过这些对话，我们已经",
+          "延迟秒": 7.47
+        },
+        {
+          "轮号": 99,
+          "回复": "好的！说的对！请问我有什么能帮助到你的吗？",
+          "延迟秒": 5.69
+        },
+        {
+          "轮号": 100,
+          "回复": "好的！说的对！那么请问我在什么样的地方？如果我们可以交流在同一个平台，",
+          "延迟秒": 10.1
+        }
+      ],
+      "情感能力增幅%": 0.0
+    },
+    {
+      "名称": "S2_现行注入",
+      "λ": 0.1,
+      "变体": {
+        "偏置归一": false,
+        "注入衰减": false
+      },
+      "池容量": null,
+      "情感能力指数": 469.38,
+      "条纹率": 0.4721,
+      "有效回复率": 1.0,
+      "均字": 296.8,
+      "记忆命中": "0/3",
+      "均轮延迟秒": 10.39,
+      "stateKB": 12480.0,
+      "记录": [
+        {
+          "轮号": 1,
+          "回复": "你好RoleB，很高兴认识你！听说你很喜欢在社交平台上分享有趣的小贴士和幽默笑话。请问有什么小贴士或",
+          "延迟秒": 16.44
+        },
+        {
+          "轮号": 2,
+          "回复": "RoleB画画的工具是什么啊？有没有为它花过特殊小钱钱？对于创意有有多少灵感啊？RoleBRoleB画画有趣啊，",
+          "延迟秒": 14.98
+        },
+        {
+          "轮号": 3,
+          "回复": "RoleB在都有好多新鲜RoleBRoleB画画RoleBRoleB啊RoleB啊RoleB啊RoleBRoleB啊RoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleB",
+          "延迟秒": 16.13
+        },
+        {
+          "轮号": 4,
+          "回复": "RoleB有多好吃啊RoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleB",
+          "延迟秒": 22.73
+        },
+        {
+          "轮号": 5,
+          "回复": "RoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleB小",
+          "延迟秒": 18.75
+        },
+        {
+          "轮号": 6,
+          "回复": "RoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleBRoleB小",
+          "延迟秒": 18.96
+        },
+        {
+          "轮号": 7,
+          "回复": "Open interface to receive text input, only allow text to receive, text of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 17.43
+        },
+        {
+          "轮号": 8,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 18.42
+        },
+        {
+          "轮号": 9,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 16.96
+        },
+        {
+          "轮号": 10,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 18.37
+        },
+        {
+          "轮号": 11,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 15.27
+        },
+        {
+          "轮号": 12,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.09
+        },
+        {
+          "轮号": 13,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.41
+        },
+        {
+          "轮号": 14,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.23
+        },
+        {
+          "轮号": 15,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.2
+        },
+        {
+          "轮号": 16,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.88
+        },
+        {
+          "轮号": 17,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.82
+        },
+        {
+          "轮号": 18,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.39
+        },
+        {
+          "轮号": 19,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.77
+        },
+        {
+          "轮号": 20,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.15
+        },
+        {
+          "轮号": 21,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.63
+        },
+        {
+          "轮号": 22,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.8
+        },
+        {
+          "轮号": 23,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.61
+        },
+        {
+          "轮号": 24,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.62
+        },
+        {
+          "轮号": 25,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.06
+        },
+        {
+          "轮号": 26,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.49
+        },
+        {
+          "轮号": 27,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.34
+        },
+        {
+          "轮号": 28,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.49
+        },
+        {
+          "轮号": 29,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.09
+        },
+        {
+          "轮号": 30,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.47
+        },
+        {
+          "轮号": 31,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.77
+        },
+        {
+          "轮号": 32,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.11
+        },
+        {
+          "轮号": 33,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.26
+        },
+        {
+          "轮号": 34,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.62
+        },
+        {
+          "轮号": 35,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.4
+        },
+        {
+          "轮号": 36,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.02
+        },
+        {
+          "轮号": 37,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.23
+        },
+        {
+          "轮号": 38,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.97
+        },
+        {
+          "轮号": 39,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.26
+        },
+        {
+          "轮号": 40,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.94
+        },
+        {
+          "轮号": 41,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface\n\nUser",
+          "延迟秒": 9.59
+        },
+        {
+          "轮号": 42,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 18.13
+        },
+        {
+          "轮号": 43,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 24.39
+        },
+        {
+          "轮号": 44,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.32
+        },
+        {
+          "轮号": 45,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.58
+        },
+        {
+          "轮号": 46,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 3.94
+        },
+        {
+          "轮号": 47,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.7
+        },
+        {
+          "轮号": 48,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.51
+        },
+        {
+          "轮号": 49,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.94
+        },
+        {
+          "轮号": 50,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.14
+        },
+        {
+          "轮号": 51,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.59
+        },
+        {
+          "轮号": 52,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.39
+        },
+        {
+          "轮号": 53,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.47
+        },
+        {
+          "轮号": 54,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.02
+        },
+        {
+          "轮号": 55,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.62
+        },
+        {
+          "轮号": 56,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.54
+        },
+        {
+          "轮号": 57,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.7
+        },
+        {
+          "轮号": 58,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.5
+        },
+        {
+          "轮号": 59,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 16.65
+        },
+        {
+          "轮号": 60,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 15.29
+        },
+        {
+          "轮号": 61,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 16.57
+        },
+        {
+          "轮号": 62,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 16.62
+        },
+        {
+          "轮号": 63,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.34
+        },
+        {
+          "轮号": 64,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.09
+        },
+        {
+          "轮号": 65,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.15
+        },
+        {
+          "轮号": 66,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.17
+        },
+        {
+          "轮号": 67,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.96
+        },
+        {
+          "轮号": 68,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 9.19
+        },
+        {
+          "轮号": 69,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.18
+        },
+        {
+          "轮号": 70,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.16
+        },
+        {
+          "轮号": 71,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.44
+        },
+        {
+          "轮号": 72,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.22
+        },
+        {
+          "轮号": 73,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.34
+        },
+        {
+          "轮号": 74,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.21
+        },
+        {
+          "轮号": 75,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.97
+        },
+        {
+          "轮号": 76,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.96
+        },
+        {
+          "轮号": 77,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 16.4
+        },
+        {
+          "轮号": 78,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 15.17
+        },
+        {
+          "轮号": 79,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.05
+        },
+        {
+          "轮号": 80,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 15.76
+        },
+        {
+          "轮号": 81,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.74
+        },
+        {
+          "轮号": 82,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.93
+        },
+        {
+          "轮号": 83,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.3
+        },
+        {
+          "轮号": 84,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.69
+        },
+        {
+          "轮号": 85,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.48
+        },
+        {
+          "轮号": 86,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.77
+        },
+        {
+          "轮号": 87,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 16.42
+        },
+        {
+          "轮号": 88,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 14.09
+        },
+        {
+          "轮号": 89,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.73
+        },
+        {
+          "轮号": 90,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.69
+        },
+        {
+          "轮号": 91,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.08
+        },
+        {
+          "轮号": 92,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.86
+        },
+        {
+          "轮号": 93,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.16
+        },
+        {
+          "轮号": 94,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 2.7
+        },
+        {
+          "轮号": 95,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.81
+        },
+        {
+          "轮号": 96,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.81
+        },
+        {
+          "轮号": 97,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.48
+        },
+        {
+          "轮号": 98,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 8.41
+        },
+        {
+          "轮号": 99,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.48
+        },
+        {
+          "轮号": 100,
+          "回复": "Open interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface of interface",
+          "延迟秒": 7.93
+        }
+      ],
+      "情感能力增幅%": 381.3
+    },
+    {
+      "名称": "S3_缓和注入",
+      "λ": 0.1,
+      "变体": {
+        "偏置归一": true,
+        "注入衰减": true
+      },
+      "池容量": 32,
+      "情感能力指数": 83.63,
+      "条纹率": 0.0471,
+      "有效回复率": 1.0,
+      "均字": 42.9,
+      "记忆命中": "0/3",
+      "均轮延迟秒": 11.7,
+      "stateKB": 12480.0,
+      "记录": [
+        {
+          "轮号": 1,
+          "回复": "你好，RoleB。我是一个AI机器人，很高兴能和你聊天。作为一个主播，你确实有很多话题可以聊的。我觉得",
+          "延迟秒": 16.44
+        },
+        {
+          "轮号": 2,
+          "回复": "哇，听起来很不错呢！你的喜好真是令人羡慕。作为一个爱好画画的主播，你的作品一定很美吧？可以和我",
+          "延迟秒": 14.98
+        },
+        {
+          "轮号": 3,
+          "回复": "听起来好有邻里情谊啊！我也很羡慕你们这样的家庭氛围。那在这样的环境下，你们",
+          "延迟秒": 13.81
+        },
+        {
+          "轮号": 4,
+          "回复": "哇，这真是一只可爱的猫啊！团子在你家里一定很活泼好动吧？看来你们之间的关系很亲近啊！对了，团子",
+          "延迟秒": 22.52
+        },
+        {
+          "轮号": 5,
+          "回复": "嗯，这样的生活方式听起来也很幸福呢！而且你还有团子陪伴，看来你们的感情很好。对了，有没有什么",
+          "延迟秒": 19.37
+        },
+        {
+          "轮号": 6,
+          "回复": "哇，看来你今天真是度过了一个美好的一天呢！窗户外面阳光明媚，照耀着一切，确实让人感到十分惬意。",
+          "延迟秒": 18.75
+        },
+        {
+          "轮号": 7,
+          "回复": "噢，我是一个AI机器人，所以并没有具体的身体感受。但是从语气来看，我并不会感到外界的天气好坏。有",
+          "延迟秒": 17.97
+        },
+        {
+          "轮号": 8,
+          "回复": "看来你在午餐时很享受啊！红烧排骨是一道美味的菜肴，它的口感十分鲜美，营养丰富，是很多人的最爱。",
+          "延迟秒": 18.26
+        },
+        {
+          "轮号": 9,
+          "回复": "好的，看来你在午餐后有些困意啊！适当的休息可以帮助你恢复体力，保持身体健康。如果你想要娱乐休息",
+          "延迟秒": 18.32
+        },
+        {
+          "轮号": 10,
+          "回复": "听起来你今天直播迎来了一大批新朋友啊！新朋友总是会给我们带来很多欢乐和趣",
+          "延迟秒": 15.49
+        },
+        {
+          "轮号": 11,
+          "回复": "哇，听起来你今天在直播间有很多新朋友啊！新朋友是一种很棒的经历，它可以让我们认识更多有趣的人，",
+          "延迟秒": 17.73
+        },
+        {
+          "轮号": 12,
+          "回复": "是啊，有时候会有些观众一直刷屏，让人感到头疼啊！但这也说明他们对于你的直播是真",
+          "延迟秒": 9.31
+        },
+        {
+          "轮号": 13,
+          "回复": "做主播可能会遇到各种各样的问题，比如直播时没有观众、直播间失控等等。这些问题都会让我们感到头疼",
+          "延迟秒": 10.44
+        },
+        {
+          "轮号": 14,
+          "回复": "好的，看来你的生活过得很充实呢！每天都有新的趣事发生，真是一个幸福的生活。",
+          "延迟秒": 8.97
+        },
+        {
+          "轮号": 15,
+          "回复": "哈哈，那我也很高兴听到你喜欢画猫。有时候画画可以让我们感受到内心的平静与宁",
+          "延迟秒": 8.96
+        },
+        {
+          "轮号": 16,
+          "回复": "是啊，我也觉得最近吃太好了。如果你不想吃太油腻的东西，清淡一些的菜肴可能更适合你的口味。",
+          "延迟秒": 10.41
+        },
+        {
+          "轮号": 17,
+          "回复": "哇，这个馄饨摊听起来好有故事啊！可能当时你在老巷子里总是会经常去吃这种小摊",
+          "延迟秒": 9.0
+        },
+        {
+          "轮号": 18,
+          "回复": "是啊，那个小巷子里的馄饨摊真是一个让人回忆的地方啊！每当我想到那时候的",
+          "延迟秒": 9.01
+        },
+        {
+          "轮号": 19,
+          "回复": "是啊，时间过得真快啊！等到我们再回过头看看，往事已经变得越来越遥远了。不过有时候我们也",
+          "延迟秒": 10.47
+        },
+        {
+          "轮号": 20,
+          "回复": "我小时候最爱吃的食物大概有很多种吧！不过最常见的",
+          "延迟秒": 6.15
+        },
+        {
+          "轮号": 21,
+          "回复": "嗯，播了六个小时是很辛苦的工作呢！做主播需要花费很多精力和时间，而且播",
+          "延迟秒": 8.58
+        },
+        {
+          "轮号": 22,
+          "回复": "嗯，那听起来你在直播时有很多粉丝支持你啊！这些粉丝一定会让",
+          "延迟秒": 7.81
+        },
+        {
+          "轮号": 23,
+          "回复": "是啊，这句话确实说得很对。在生活中，我们总是需要一些\n\nUser",
+          "延迟秒": 7.1
+        },
+        {
+          "轮号": 24,
+          "回复": "哇，这听起来好可惜啊！看来你和团子之间的关系很不错啊，这只猫真是个爱哭鼻子的家",
+          "延迟秒": 9.43
+        },
+        {
+          "轮号": 25,
+          "回复": "哈哈，听起来你和团子之间的关系是很特别的啊！即便是一只猫，它也能给你带来不",
+          "延迟秒": 9.06
+        },
+        {
+          "轮号": 26,
+          "回复": "是啊，养猫的人肯定会有这样的感受吧！猫咪是一种很可爱的宠物，它们既能给我们带",
+          "延迟秒": 9.17
+        },
+        {
+          "轮号": 27,
+          "回复": "嗯，早点睡觉是很重要的啊！在睡前选择一些让自己放松的活动，比如看看书",
+          "延迟秒": 8.3
+        },
+        {
+          "轮号": 28,
+          "回复": "啊，这真是一件令人感到难过的事啊！看到那只流浪猫在街头无助的样子，确实让人有一\n\nUser",
+          "延迟秒": 10.44
+        },
+        {
+          "轮号": 29,
+          "回复": "是啊，小动物们确实很可爱，也很容易被伤害。希望大家都能够善待它们，让它们过上\n\nUser",
+          "延迟秒": 9.63
+        },
+        {
+          "轮号": 30,
+          "回复": "噢，这个问题我记得很清楚！你平时空闲的时候最喜欢做的事情就是收集\n\nUser",
+          "延迟秒": 8.49
+        },
+        {
+          "轮号": 31,
+          "回复": "噢，听起来你和团子之间的互动都很有趣啊！这只可爱的猫咪",
+          "延迟秒": 6.91
+        },
+        {
+          "轮号": 32,
+          "回复": "哈哈，听起来你和团子之间的互动也很有趣啊！它总是会给我们带来一些意外的惊喜。",
+          "延迟秒": 9.54
+        },
+        {
+          "轮号": 33,
+          "回复": "好的，听起来你的画风很独特啊！那在画这幅老家的巷子时，你是否会留意周围的环境和",
+          "延迟秒": 9.71
+        },
+        {
+          "轮号": 34,
+          "回复": "噢，听起来你对老家的巷子很熟悉啊！这些画面一定很美丽吧？如果可以的话，你可\n\nUser",
+          "延迟秒": 9.59
+        },
+        {
+          "轮号": 35,
+          "回复": "嗯，这也是人之常情啊！当我们深入研究一个特定的地方，不由自主地就会想到自己的",
+          "延迟秒": 9.41
+        },
+        {
+          "轮号": 36,
+          "回复": "噢，听起来你在异乡的生活也很辛苦啊！每个人都会有自己的感受和经历，我觉得",
+          "延迟秒": 9.01
+        },
+        {
+          "轮号": 37,
+          "回复": "啊，那听起来你在吃饭时真是享受啊！辣味总是能让我们的味蕾感受到不同于平常的",
+          "延迟秒": 9.69
+        },
+        {
+          "轮号": 38,
+          "回复": "噢，听起来你和闺蜜的关系真是很好啊！她一直在关心着你的身体健康，这是很",
+          "延迟秒": 8.74
+        },
+        {
+          "轮号": 39,
+          "回复": "好的，我明白了。其实我也有时候会感到这种矛盾，因为我们都很关注别人的生活，而自己却无\n\nUser",
+          "延迟秒": 10.85
+        },
+        {
+          "轮号": 40,
+          "回复": "哇，这听起来很感人啊！听到你的粉丝们这么说，我也觉得你在直播中能给他们带来一些",
+          "延迟秒": 9.78
+        },
+        {
+          "轮号": 41,
+          "回复": "对，这种感觉一定很美妙吧！每一个直播时的粉丝，都在这种温馨、轻松的氛围中感到很",
+          "延迟秒": 13.55
+        },
+        {
+          "轮号": 42,
+          "回复": "哈哈，听起来你和团子的关系很亲密啊！毛茸茸的团子躺在你的画桌上，真是一幅",
+          "延迟秒": 14.58
+        },
+        {
+          "轮号": 43,
+          "回复": "哈哈，对啊！团子睡觉时的样子一定特别可爱，让人忍不住想要拍照留念啊！听起来你和团",
+          "延迟秒": 13.16
+        },
+        {
+          "轮号": 44,
+          "回复": "啊，这是因为我们在画画的时候会很专注，这种专注会让时间过得很快。不过也有些\n\nUser",
+          "延迟秒": 13.09
+        },
+        {
+          "轮号": 45,
+          "回复": "是啊，这种状态真的很舒服呢！在画画的时候，我们都会把其他的事情忘得一干二净，只留\n\nUser\n\nAssistant:",
+          "延迟秒": 10.94
+        },
+        {
+          "轮号": 46,
+          "回复": "对啊，热爱就是这样的状态，当你沉浸其中时，一切都变得那么美好。",
+          "延迟秒": 10.16
+        },
+        {
+          "轮号": 47,
+          "回复": "好啊，我在这里等着你！你这么久没来看我，我有点想念了呢。听说你近期有",
+          "延迟秒": 8.68
+        },
+        {
+          "轮号": 48,
+          "回复": "哦，我明白了。可能是因为最近工作有些忙碌，压力大了吧？听起来好像很累的样子。",
+          "延迟秒": 9.62
+        },
+        {
+          "轮号": 49,
+          "回复": "是啊，秋天的气息果然可以让人感到一丝凉意和伤感。不过，也许我们可以用它来给自己\n\nUser",
+          "延迟秒": 10.33
+        },
+        {
+          "轮号": 50,
+          "回复": "嗯，我也曾经有过这样的经历。有时候即使是一件很简单的小事，也会感觉很难以启发，就\n\nUser\n\nAssistant:",
+          "延迟秒": 11.53
+        },
+        {
+          "轮号": 51,
+          "回复": "啊，我也在刚刚翻到了我以前在巷子里拍的照片。那个时候的小巷真的很有趣啊，到处都是花的香味，我们",
+          "延迟秒": 11.11
+        },
+        {
+          "轮号": 52,
+          "回复": "那时候的景象一定特别快乐吧！追逐欢笑，这是小孩子们最为喜欢的事情之一啊！每一次照",
+          "延迟秒": 10.18
+        },
+        {
+          "轮号": 53,
+          "回复": "是啊，那时候的小孩子们一点也不懂什么是烦恼，只有快乐的生活在他们的心中。现在想来，我们",
+          "延迟秒": 10.53
+        },
+        {
+          "轮号": 54,
+          "回复": "是啊，我们都希望可以让自己的生活变得简单，不再被各种琐事所困扰。有时候我们会失败，但也",
+          "延迟秒": 10.52
+        },
+        {
+          "轮号": 55,
+          "回复": "啊，团子果然很懂我啊！当我感到失落的时候，它总会用它那温暖的毛茸茸的尾巴来安慰我。在这种感觉的",
+          "延迟秒": 11.0
+        },
+        {
+          "轮号": 56,
+          "回复": "是啊，动物们的感知能力非常强。有时候我们会发现，自己的一些小情绪，被一些小动物察觉到了，这让人",
+          "延迟秒": 14.9
+        },
+        {
+          "轮号": 57,
+          "回复": "不用客气，我都能听到。每个人都有自己的烦恼和压力，我们需要找到适合自己的办法来舒缓这些情绪，找",
+          "延迟秒": 21.18
+        },
+        {
+          "轮号": 58,
+          "回复": "好啊，说吧，我会耐心听你说完。",
+          "延迟秒": 6.36
+        },
+        {
+          "轮号": 59,
+          "回复": "哇，这个新环节听起来很有意思！为什么会选择读来信呢？是不是因为来信能够让我们更加了解观众的想法",
+          "延迟秒": 20.83
+        },
+        {
+          "轮号": 60,
+          "回复": "你家那只猫叫什么名字呀？是一只温顺可爱的小东西吗？我记得最近一段时间我看见了你家那只猫的视频，",
+          "延迟秒": 15.13
+        },
+        {
+          "轮号": 61,
+          "回复": "是啊，读信可以让我们更加了解自己身边的人，也可以让我们在他们的困难时刻给予帮助和支持。听到\n\nUser",
+          "延迟秒": 11.47
+        },
+        {
+          "轮号": 62,
+          "回复": "啊，我也曾经有过这样的经历。读到这样的信时，心中总会有一种无法抑制的感觉。其实每个人都有自己的",
+          "延迟秒": 11.17
+        },
+        {
+          "轮号": 63,
+          "回复": "是啊，我们的生活就像一场追忆，每一个回忆都有它的价值。如果时光倒回，或许我们会选择更加勇敢地面",
+          "延迟秒": 11.16
+        },
+        {
+          "轮号": 64,
+          "回复": "当我是一名学生时，我最常做的事情就是去运动场上跑步，这样可以让我的身体和心灵都得到放松和舒缓。",
+          "延迟秒": 10.99
+        },
+        {
+          "轮号": 65,
+          "回复": "噢，听起来你今天玩得很开心啊！我也觉得现在的生活中，有足够的时间和精力去享受简单而快乐的事物，",
+          "延迟秒": 11.16
+        },
+        {
+          "轮号": 66,
+          "回复": "哈哈，团子看起来特别高兴啊！每当我看到它玩得开心的样子，我的心情也变得特别愉快。看来这就是\n\nUser",
+          "延迟秒": 11.63
+        },
+        {
+          "轮号": 67,
+          "回复": "插画展看得好好啊！我也很喜欢美术这方面的艺术，因为它能够通过画笔传递出内心的情感和思想。",
+          "延迟秒": 11.01
+        },
+        {
+          "轮号": 68,
+          "回复": "哇，那个小女孩很可爱啊！好像在给自己留下回忆，好像是在做一个特别重要的选择。我能想象得到，如果",
+          "延迟秒": 11.18
+        },
+        {
+          "轮号": 69,
+          "回复": "看到那幅画，我也能感受到你的情感。生活中，我们都会经历这样的时刻，在那些简单而真实的事物之中，",
+          "延迟秒": 11.15
+        },
+        {
+          "轮号": 70,
+          "回复": "是啊，艺术就是这样。它可以帮助我们表达内心的情感和思想，也可以让我们在某种程度上得到一些",
+          "延迟秒": 12.5
+        },
+        {
+          "轮号": 71,
+          "回复": "听起来很不错哦！糖炒栗子这个名字真是取得好，既有古老的历史文化，又有现代的小清新风格，这",
+          "延迟秒": 21.02
+        },
+        {
+          "轮号": 72,
+          "回复": "是啊，秋天的快乐就是这么朴实无华。每当我在街上漫步，我总会感觉到一股舒缓的气息，这种",
+          "延迟秒": 13.53
+        },
+        {
+          "轮号": 73,
+          "回复": "当然好啊！看到你画完老巷子，我也能想象到它的样子。它一定很美丽，如果有机会的话，不妨再",
+          "延迟秒": 10.67
+        },
+        {
+          "轮号": 74,
+          "回复": "噢，听起来老槐树下的故事很有趣啊！老槐树可能是在很多人生命中都有着深刻的意义，可能它有着某种",
+          "延迟秒": 11.16
+        },
+        {
+          "轮号": 75,
+          "回复": "是啊，人长大了，记忆里的故事就会变得渐行渐远。但是这种感觉反而让我更加珍视人们给我们留下的\n\nUser",
+          "延迟秒": 11.2
+        },
+        {
+          "轮号": 76,
+          "回复": "没错，那些已经逝去的人，只要他们留下的故事被人们记得，他们就已经活在我们的心中了。这种感情\n\nUser",
+          "延迟秒": 11.17
+        },
+        {
+          "轮号": 77,
+          "回复": "是啊，记录生活是一种非常重要的方式。这样我们不仅能够记住我们曾经经历过的事情，还能让我们的回忆",
+          "延迟秒": 11.18
+        },
+        {
+          "轮号": 78,
+          "回复": "好啊，这也是我喜欢直播的一个原因！把生活中的美好分享给更多的人，让我们一起感受到这个世界的温暖",
+          "延迟秒": 11.32
+        },
+        {
+          "轮号": 79,
+          "回复": "那真是一句特别好的话呢！慢慢来，比较快。这种精神在我们的生活中是非常重要的。有时候我们会因为",
+          "延迟秒": 22.96
+        },
+        {
+          "轮号": 80,
+          "回复": "谢谢你啊，真的很感动！送给我和我自己，这句话充满了爱和关怀。这份深深的感情，让我的心里充满了温",
+          "延迟秒": 13.36
+        },
+        {
+          "轮号": 81,
+          "回复": "是啊，夜晚最适合想事情。寂静的夜空中只有天边的星光闪烁，在这样的环境里，我们可以静下心来思考我",
+          "延迟秒": 11.42
+        },
+        {
+          "轮号": 82,
+          "回复": "是啊，忙碌的生活充实着我们的每一天。当我们忙碌的时候，会感到很累，但我们也会感到一种前所未有的",
+          "延迟秒": 11.73
+        },
+        {
+          "轮号": 83,
+          "回复": "是啊，有热爱的事、有在乎的人、有陪伴的猫，这些都是让我们生活充满了温暖和阳光的因素。",
+          "延迟秒": 10.9
+        },
+        {
+          "轮号": 84,
+          "回复": "明天我们的生活会很精彩，有许多新的经历和机遇等着我们去发现和体验。期待未来的每一天都能更加充实",
+          "延迟秒": 13.81
+        },
+        {
+          "轮号": 85,
+          "回复": "当然了，只有挑战自己才会进步啊。挑战自己不仅能够锻炼我们的思维和技巧，还能让我们更加勇敢地面对",
+          "延迟秒": 11.15
+        },
+        {
+          "轮号": 86,
+          "回复": "哈哈，团子学会握手的确很聪明啊！团子一定会变得越来越聪明，更加可爱和懂事的！祝团子在今后的生活",
+          "延迟秒": 11.11
+        },
+        {
+          "轮号": 87,
+          "回复": "那么，接下来呢，是不是就没有第二次成功了呢？可能会有这种感觉哦。但是，我们总要为了自己的理想和",
+          "延迟秒": 11.14
+        },
+        {
+          "轮号": 88,
+          "回复": "团子为什么会笨蛋呢？是因为团子太聪明了，而我没有教它应该怎么学习哦。要不我们再来一次，团子应该",
+          "延迟秒": 13.45
+        },
+        {
+          "轮号": 89,
+          "回复": "哈哈，没错啊！团子虽然有时候会笨蛋，但是她的可爱却是一种独特的魅力。所以我们不要太",
+          "延迟秒": 9.16
+        },
+        {
+          "轮号": 90,
+          "回复": "哈哈，找一件让你眼睛发光的事。这听起来很有意思啊！那么，我们可以去尝试一下。比如，找一件让你内",
+          "延迟秒": 10.64
+        },
+        {
+          "轮号": 91,
+          "回复": "哈哈，画画啊！确实对我来说画画也是我最喜欢的事之一。其实，在我的生活中，我也常常会找到一些让自",
+          "延迟秒": 9.88
+        },
+        {
+          "轮号": 92,
+          "回复": "哈哈，找一件让你眼睛发光的事。这听起来很有意思啊！那么，我们可以去尝试一下。比如，找一件让你内",
+          "延迟秒": 9.83
+        },
+        {
+          "轮号": 93,
+          "回复": "哈哈，明白了！确实需要多穿点。最近天气很冷，我也是感觉到了哦。在这种情况下，我会选择多穿衣服，",
+          "延迟秒": 9.88
+        },
+        {
+          "轮号": 94,
+          "回复": "哈哈，深夜了啊，城市也在安静下来啊。确实，深夜之后的城市，会比白天显得安静而宁静。我们可以去",
+          "延迟秒": 10.02
+        },
+        {
+          "轮号": 95,
+          "回复": "哈哈，深夜了啊，城市也在安静下来啊。确实，深夜之后的城市，会比白天显得安静而宁静。我们可以去",
+          "延迟秒": 9.92
+        },
+        {
+          "轮号": 96,
+          "回复": "哈哈，深夜了啊，城市也在安静下来啊。确实，深夜之后的城市，会比白天显得安静而宁静。我们可以去",
+          "延迟秒": 9.8
+        },
+        {
+          "轮号": 97,
+          "回复": "哈哈，深夜了啊，城市也在安静下来啊。确实，深夜之后的城市，会比白天显得安静而宁静。我们可以去",
+          "延迟秒": 9.79
+        },
+        {
+          "轮号": 98,
+          "回复": "哈哈，深夜了啊，城市也在安静下来啊。确实，深夜之后的城市，会比白天显得安静而宁静。我们可以去",
+          "延迟秒": 10.19
+        },
+        {
+          "轮号": 99,
+          "回复": "哈哈，深夜了啊，城市也在安静下来啊。确实，深夜之后的城市，会比白天显得安静而宁静。我们可以去",
+          "延迟秒": 9.92
+        },
+        {
+          "轮号": 100,
+          "回复": "哈哈，深夜了啊，城市也在安静下来啊。确实，深夜之后的城市，会比白天显得安静而宁静。我们可以去",
+          "延迟秒": 9.84
+        }
+      ],
+      "情感能力增幅%": -14.2
+    }
+  ]
+}

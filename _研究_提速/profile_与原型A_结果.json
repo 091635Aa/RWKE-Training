@@ -1,0 +1,27 @@
+{
+  "时间": "2026-09-08 19:32:16",
+  "设备": "NVIDIA GeForce RTX 3080 Laptop GPU",
+  "加载秒": 23.6,
+  "模型": "RWKV7-G1-1.5B",
+  "P1_前向单步jit_ms": 205.05,
+  "P1_官方forward单步_ms": 93.14,
+  "P1_投影搬运_ms": 214.59,
+  "P1_注入matmul_ms": 2.07,
+  "P1_注入投影形状": [
+    2048,
+    65536
+  ],
+  "P1_注入投影MB": 537,
+  "P1_采样链_ms": 6.75,
+  "P2_失败": "BackendCompilerFailed: backend='inductor' raised:\nRuntimeError: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at https://",
+  "P1_前向单步jit_ms_复测": 203.58,
+  "P1_jit_tokps": 4.9,
+  "P2b_等价logits最大差": 0.140625,
+  "P2b_ts步进_ms": 90.38,
+  "P2b_ts_tokps": 11.1,
+  "P2b_加速比_步进级": 2.25,
+  "P2b_失败": false,
+  "P3_端到端tokps": 10.0,
+  "P3_原型名": "jit.script整环",
+  "P3_基线端到端tokps_参照": 2.3
+}

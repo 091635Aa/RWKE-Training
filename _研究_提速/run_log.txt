@@ -1,0 +1,233 @@
+﻿python : W0908 19:34:10.326000 23448 site-packages\torch\_inductor\utils.py:1137] [2/0] Not enough SMs to use max_autot
+une_gemm mode
+At line:15 char:2560
++ ... pgrep\bin'; python "_研究_提速/profile_与原型A.py" > "_研究_提速\run_log.txt" 2> ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (W0908 19:34:10....otune_gemm mode:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Traceback (most recent call last):
+  File "<workspace>/RWKE\_研究_提速\profile_与原型A.py", line 257, in <module>
+    lg_c, st_c, hd_c = 编译步进(torch.tensor(tok, device=设备), state_cps)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\eval_frame.py", 
+line 574, in _fn
+    return fn(*args, **kwargs)
+  File "<workspace>/RWKE\_研究_提速\profile_与原型A.py", line 241, in _编译步进
+    logits, 新状态, hidden = _功能步进(token张量参数, 状态列表)
+  File "<workspace>/RWKE\_研究_提速\profile_与原型A.py", line 172, in _功能步进
+    x = z["emb.weight"][token张量参数]
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\convert_frame.py
+", line 1380, in __call__
+    return self._torchdynamo_orig_callable(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\convert_frame.py
+", line 1164, in __call__
+    result = self._inner_convert(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\convert_frame.py
+", line 547, in __call__
+    return _compile(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\convert_frame.py
+", line 986, in _compile
+    guarded_code = compile_inner(code, one_graph, hooks, transform)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\convert_frame.py
+", line 715, in compile_inner
+    return _compile_inner(code, one_graph, hooks, transform)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_utils_internal.py", lin
+e 95, in wrapper_function
+    return function(*args, **kwargs)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\convert_frame.py
+", line 750, in _compile_inner
+    out_code = transform_code_object(code, transform)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\bytecode_transfo
+rmation.py", line 1361, in transform_code_object
+    transformations(instructions, code_options)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\convert_frame.py
+", line 231, in _fn
+    return fn(*args, **kwargs)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\convert_frame.py
+", line 662, in transform
+    tracer.run()
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\symbolic_convert
+.py", line 2868, in run
+    super().run()
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\symbolic_convert
+.py", line 1052, in run
+    while self.step():
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\symbolic_convert
+.py", line 962, in step
+    self.dispatch_table[inst.opcode](self, inst)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\symbolic_convert
+.py", line 3048, in RETURN_VALUE
+    self._return(inst)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\symbolic_convert
+.py", line 3033, in _return
+    self.output.compile_subgraph(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\output_graph.py"
+, line 1136, in compile_subgraph
+    self.compile_and_call_fx_graph(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\output_graph.py"
+, line 1382, in compile_and_call_fx_graph
+    compiled_fn = self.call_user_compiler(gm)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\output_graph.py"
+, line 1432, in call_user_compiler
+    return self._call_user_compiler(gm)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\output_graph.py"
+, line 1483, in _call_user_compiler
+    raise BackendCompilerFailed(self.compiler_fn, e).with_traceback(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\output_graph.py"
+, line 1462, in _call_user_compiler
+    compiled_fn = compiler_fn(gm, self.example_inputs())
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\repro\after_dyna
+mo.py", line 130, in __call__
+    compiled_gm = compiler_fn(gm, example_inputs)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\__init__.py", line 2340,
+ in __call__
+    return compile_fx(model_, inputs_, config_patches=self.config)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\compile_fx.py"
+, line 1552, in compile_fx
+    return compile_fx(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\compile_fx.py"
+, line 1863, in compile_fx
+    return aot_autograd(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\backends\common.
+py", line 83, in __call__
+    cg = aot_module_simplified(gm, example_inputs, **self.kwargs)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_functorch\aot_autograd.
+py", line 1155, in aot_module_simplified
+    compiled_fn = dispatch_and_compile()
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_functorch\aot_autograd.
+py", line 1131, in dispatch_and_compile
+    compiled_fn, _ = create_aot_dispatcher_function(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_functorch\aot_autograd.
+py", line 580, in create_aot_dispatcher_function
+    return _create_aot_dispatcher_function(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_functorch\aot_autograd.
+py", line 830, in _create_aot_dispatcher_function
+    compiled_fn, fw_metadata = compiler_fn(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_functorch\_aot_autograd
+\jit_compile_runtime_wrappers.py", line 203, in aot_dispatch_base
+    compiled_fw = compiler(fw_module, updated_flat_args)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_functorch\aot_autograd.
+py", line 489, in __call__
+    return self.compiler_fn(gm, example_inputs)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\compile_fx.py"
+, line 1741, in fw_compiler_base
+    return inner_compile(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\compile_fx.py"
+, line 569, in compile_fx_inner
+    return wrap_compiler_debug(_compile_fx_inner, compiler_name="inductor")(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_dynamo\repro\after_aot.
+py", line 102, in debug_wrapper
+    inner_compiled_fn = compiler_fn(gm, example_inputs)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\compile_fx.py"
+, line 685, in _compile_fx_inner
+    mb_compiled_graph = fx_codegen_and_compile(
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\compile_fx.py"
+, line 1129, in fx_codegen_and_compile
+    return scheme.codegen_and_compile(gm, example_inputs, inputs_to_check, graph_kwargs)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\compile_fx.py"
+, line 1044, in codegen_and_compile
+    compiled_fn = graph.compile_to_module().call
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\graph.py", lin
+e 2027, in compile_to_module
+    return self._compile_to_module()
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\graph.py", lin
+e 2033, in _compile_to_module
+    self.codegen_with_cpp_wrapper() if self.cpp_wrapper else self.codegen()
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\graph.py", lin
+e 1964, in codegen
+    self.scheduler = Scheduler(self.operations)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\scheduler.py",
+ line 1798, in __init__
+    self._init(nodes)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\scheduler.py",
+ line 1816, in _init
+    self.nodes = [self.create_scheduler_node(n) for n in nodes]
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\scheduler.py",
+ line 1816, in <listcomp>
+    self.nodes = [self.create_scheduler_node(n) for n in nodes]
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\scheduler.py",
+ line 1947, in create_scheduler_node
+    return SchedulerNode(self, node)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\scheduler.py",
+ line 893, in __init__
+    self._compute_attrs()
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\scheduler.py",
+ line 907, in _compute_attrs
+    group_fn = self.scheduler.get_backend(device).group_fn
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\scheduler.py",
+ line 3441, in get_backend
+    self.backends[device] = self.create_backend(device)
+  File "<home>/AppData\Local\Programs\Python\Python310\lib\site-packages\torch\_inductor\scheduler.py",
+ line 3432, in create_backend
+    raise RuntimeError(
+torch._dynamo.exc.BackendCompilerFailed: backend='inductor' raised:
+RuntimeError: Cannot find a working triton installation. Either the package is not installed or it is too old. More inf
+ormation on installing Triton can be found at https://github.com/openai/triton
+
+Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+
+
+You can suppress this exception and fall back to eager by setting:
+    import torch._dynamo
+    torch._dynamo.config.suppress_errors = True
+
+[加载] RWKV7-G1-1.5B …
+
+### RWKV-7 "Goose" enabled ###
+
+Loading <workspace>/RWKE\models\rwkv7-g1j-1.5b-20260831-ctx16384 (cuda fp16)
+
+[加载完成] 23.6s，RWKE引擎(标识=RWKV7-G1-1.5B, 策略='cuda fp16', 设备=cuda:0, dtype=torch.float16, n_layer=24, n_embd=2048, vocab=65536, λ=0.1, γ=0.08, τ=0.06, 投影种子=42, 末N层=4, 池大小=0, 挂载State=无, 适配器=无)
+
+===== P1 基线剖析 =====
+(a) 引擎 _前向单步（jit，含捕获记录）      :   205.05 ms/步
+(b) 官方 model.forward 单token（jit官方）   :    93.14 ms/步
+(c1) 投影矩阵现状设备: cpu，形状 [2048, 65536]，537 MB
+(c1) 每步投影 CPU→GPU 搬运 (.to)          :   214.59 ms/步   ← 纯浪费，可一次缓存
+(c2) 注入 matmul（缓存GPU后）             :     2.07 ms/步
+(d) 采样链（惩罚+过滤+采样，2同步点）      :     6.75 ms/步
+
+===== P2 原型A：torch.compile =====
+[校验] 状态/logits 等价性（30 步）…
+[P2] torch.compile 不可用（Windows 无 Triton 属预期）：BackendCompilerFailed
+(f) jit 步进（复测，同口径无clone）        :   203.58 ms/步 → 4.9 tok/s
+
+===== P2b 原型B：torch.jit.script 整环 =====
+  30步后 logits 最大绝对差 : 1.406e-01（跨核实现 fp16 噪声，30 步复合放大，<3 合格）
+(g) jit.script 整环步进                   :    90.38 ms/步 → 11.1 tok/s
+
+===== P3 端到端 60 步（最优原型步进 + 注入/采样链）=====
+[jit.script整环] 端到端 60 步：5.98s → 10.0 tok/s
+
+===== 汇总 =====
+{
+  "时间": "2026-09-08 19:32:16",
+  "设备": "NVIDIA GeForce RTX 3080 Laptop GPU",
+  "加载秒": 23.6,
+  "模型": "RWKV7-G1-1.5B",
+  "P1_前向单步jit_ms": 205.05,
+  "P1_官方forward单步_ms": 93.14,
+  "P1_投影搬运_ms": 214.59,
+  "P1_注入matmul_ms": 2.07,
+  "P1_注入投影形状": [
+    2048,
+    65536
+  ],
+  "P1_注入投影MB": 537,
+  "P1_采样链_ms": 6.75,
+  "P2_失败": "BackendCompilerFailed: backend='inductor' raised:\nRuntimeError: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at https://",
+  "P1_前向单步jit_ms_复测": 203.58,
+  "P1_jit_tokps": 4.9,
+  "P2b_等价logits最大差": 0.140625,
+  "P2b_ts步进_ms": 90.38,
+  "P2b_ts_tokps": 11.1,
+  "P2b_加速比_步进级": 2.25,
+  "P2b_失败": false,
+  "P3_端到端tokps": 10.0,
+  "P3_原型名": "jit.script整环",
+  "P3_基线端到端tokps_参照": 2.3
+}
+
+结果已落盘：<workspace>/RWKE\_研究_提速\profile_与原型A_结果.json

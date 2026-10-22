@@ -1,0 +1,87 @@
+{
+  "_说明": "RWKE 系统配置：模型矩阵清单、λ/γ/τ 扫描表（D8 扩展 hidden_dim=1024 插值初值）、统一采样协议（D2/D8 决策）。",
+  "_扫描表来源": "V1架构.py L33-38 原表 {896,1536,2048,3584}；hidden_dim=1024 为 RWKV7-World-0.4B 新增条目，初值由邻近维度 896 与 1536 线性插值（t=(1024-896)/(1536-896)=0.2）：λ=0.416, γ=0.054, τ=0.098。认证测试（测试_对比.py）将以'裸 vs 注入'对照实验标定并回写本文件。",
+  "模型矩阵": {
+    "RWKV7-World-0.4B": {
+      "标识": "RWKV7-World-0.4B",
+      "后端": "rwkv7",
+      "路径": "models/RWKV-x070-World-0.4B-v2.9-20250107-ctx4096.pth",
+      "hidden_dim": 1024,
+      "n_layer": 24,
+      "vocab_size": 65536,
+      "必需": true,
+      "用途": "快速冒烟 + 多尺寸认证"
+    },
+    "RWKV7-World-1.5B": {
+      "标识": "RWKV7-World-1.5B",
+      "后端": "rwkv7",
+      "路径": "models/RWKV-x070-World-1.5B-v3-20250127-ctx4096.pth",
+      "hidden_dim": 2048,
+      "n_layer": 24,
+      "vocab_size": 65536,
+      "必需": true,
+      "用途": "对标基线的主力认证模型"
+    },
+    "RWKV7-G1-1.5B": {
+      "标识": "RWKV7-G1-1.5B",
+      "后端": "rwkv7",
+      "路径": "models/RWKV7-G1-1.5B.pth",
+      "hidden_dim": 2048,
+      "n_layer": 24,
+      "vocab_size": 65536,
+      "必需": false,
+      "用途": "可选：对话增强变体（G1）"
+    },
+    "Qwen2.5-1.5B-Instruct": {
+      "标识": "Qwen2.5-1.5B-Instruct",
+      "后端": "transformer",
+      "路径": "models/Qwen2.5-1.5B-Instruct",
+      "hidden_dim": 1536,
+      "n_layer": 28,
+      "vocab_size": 151936,
+      "必需": true,
+      "用途": "参数量对齐 RWKV-1.5B 的 Transformer 基线"
+    },
+    "Qwen2.5-0.5B-Instruct": {
+      "标识": "Qwen2.5-0.5B-Instruct",
+      "后端": "transformer",
+      "路径": "../模型空间/Qwen2.5-0.5B-Instruct",
+      "hidden_dim": 896,
+      "n_layer": 24,
+      "vocab_size": 151936,
+      "必需": true,
+      "用途": "原版 SemanticEcho 实际模型（V1 架构原样复现，扫描表 896 原生条目）"
+    }
+  },
+  "扫描表": {
+    "896": [0.50, 0.05, 0.10],
+    "1024": [0.416, 0.054, 0.098],
+    "1536": [0.08, 0.07, 0.09],
+    "2048": [0.10, 0.08, 0.06],
+    "3584": [0.06, 0.12, 0.05]
+  },
+  "_扫描表键": "hidden_dim -> (λ 注入强度, γ 回响池衰减系数, τ 不确定性入池阈值)",
+  "采样协议": {
+    "温度": 1.0,
+    "top_p": 0.9,
+    "top_k": 50,
+    "重复惩罚": 1.05,
+    "种子": 42,
+    "最大新Token": 256,
+    "投影种子": 42,
+    "末N层捕获": 4
+  },
+  "聊天模板": {
+    "风格": "rwkv_world",
+    "单轮": "User: {消息}\n\nAssistant:",
+    "回复后缀": "\n\n",
+    "停止标记": "\n\nUser:"
+  },
+  "推理环境": {
+    "RWKV_V7_ON": "1",
+    "RWKV_CUDA_ON_自动": true,
+    "_RWKV_CUDA_ON说明": "true 时先探测 nvcc：可用则 RWKV_CUDA_ON=1（编译自定义算子），否则 0（纯 PyTorch 回退，功能不缺失）",
+    "加载策略": "cuda fp16",
+    "CPU回退策略": "cpu fp32"
+  }
+}

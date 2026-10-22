@@ -1,0 +1,64 @@
+Failed to build cuBLAS matmul, falling back to torch.matmul. Small model with fp16 will overflow.
+
+### RWKV-7 "Goose" enabled ###
+
+Loading <workspace>/02_新一代架构_RWKV7\RWKE\models\rwkv7-g1j-1.5b-20260831-ctx16384 (cuda fp16)
+
+训练器就绪：基座=RWKV7-G1-1.5B（cuda fp16, 预算 14GB） n_layer=24 n_embd=2048 | rank=16 alpha=32 适配器参数量=14,155,776（基座全部冻结）
+数据加载：1211 条可用样本（截断/空目标跳过 0 条），来源 训练数据\微调数据_train.jsonl
+--自动续训：未找到默认 checkpoint 适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora.pt，从头训练
+开始训练：epochs=3 上限步=303 累积=4 序列长度=256 lr=0.0001 样本=1211 前向=序列 存点间隔=50
+  checkpoint 已保存（step1 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+[step 1] loss=2.8260 lr=1.000e-04 显存峰值=13.53GB
+  checkpoint 已保存（step3 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+  checkpoint 已保存（step4 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+  checkpoint 已保存（step8 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+[step 10] loss=2.6903 lr=1.000e-04 显存峰值=14.03GB
+  checkpoint 已保存（step18 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+[step 20] loss=2.5428 lr=1.000e-04 显存峰值=14.03GB
+[step 30] loss=2.9160 lr=1.000e-04 显存峰值=14.03GB
+  checkpoint 已保存（step32 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+  checkpoint 已保存（step39 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+[step 40] loss=1.6339 lr=1.000e-04 显存峰值=14.03GB
+  checkpoint 已保存（step43 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+  checkpoint 已保存（滚动存点 step50）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora.pt
+[step 50] loss=2.2158 lr=1.000e-04 显存峰值=14.03GB
+[step 60] loss=1.5126 lr=1.000e-04 显存峰值=14.03GB
+[step 70] loss=1.7935 lr=1.000e-04 显存峰值=14.03GB
+[step 80] loss=2.6989 lr=1.000e-04 显存峰值=14.03GB
+  checkpoint 已保存（step86 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+  checkpoint 已保存（step90 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+[step 90] loss=0.4050 lr=1.000e-04 显存峰值=14.03GB
+  checkpoint 已保存（滚动存点 step100）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora.pt
+[step 100] loss=1.9867 lr=1.000e-04 显存峰值=14.03GB
+[step 110] loss=1.4244 lr=1.000e-04 显存峰值=14.03GB
+[step 120] loss=1.3204 lr=1.000e-04 显存峰值=14.03GB
+[step 130] loss=1.2593 lr=1.000e-04 显存峰值=14.03GB
+[step 140] loss=1.7305 lr=1.000e-04 显存峰值=14.03GB
+  checkpoint 已保存（滚动存点 step150）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora.pt
+[step 150] loss=1.5847 lr=1.000e-04 显存峰值=14.03GB
+[step 160] loss=1.2077 lr=1.000e-04 显存峰值=14.03GB
+  checkpoint 已保存（step164 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+  checkpoint 已保存（step166 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+[step 170] loss=0.5597 lr=1.000e-04 显存峰值=14.03GB
+[step 180] loss=1.3207 lr=1.000e-04 显存峰值=14.03GB
+[step 190] loss=1.0218 lr=1.000e-04 显存峰值=14.03GB
+  checkpoint 已保存（滚动存点 step200）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora.pt
+[step 200] loss=1.9219 lr=1.000e-04 显存峰值=14.03GB
+[step 210] loss=1.4704 lr=1.000e-04 显存峰值=14.04GB
+  checkpoint 已保存（step217 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+[step 220] loss=1.4193 lr=1.000e-04 显存峰值=14.04GB
+  checkpoint 已保存（step225 最优）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora_best.pt
+[step 230] loss=1.9234 lr=1.000e-04 显存峰值=14.04GB
+[step 240] loss=0.8918 lr=1.000e-04 显存峰值=14.04GB
+  checkpoint 已保存（滚动存点 step250）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora.pt
+[step 250] loss=1.0128 lr=1.000e-04 显存峰值=14.04GB
+[step 260] loss=1.3726 lr=1.000e-04 显存峰值=14.04GB
+[step 270] loss=1.6327 lr=1.000e-04 显存峰值=14.04GB
+[step 280] loss=2.0810 lr=1.000e-04 显存峰值=14.04GB
+[step 290] loss=1.3678 lr=1.000e-04 显存峰值=14.04GB
+  checkpoint 已保存（滚动存点 step300）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora.pt
+[step 300] loss=2.0301 lr=1.000e-04 显存峰值=14.04GB
+  checkpoint 已保存（最终）：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_lora.pt
+训练达上限：step=303 最终loss=0.959884578982989 最优loss=0.2329335119575262 显存峰值=14.036GB 耗时=10474.0s
+训练摘要已保存：适配器\归一化实验_1.5B\RWKV7-G1-1.5B_训练摘要.json
